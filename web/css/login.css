@@ -1,0 +1,315 @@
+
+body{
+    margin: 0;
+}
+.all{
+    margin: 0;
+}
+.mainn{
+    align-items: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.contenedor{
+    width: 30%;
+    justify-content: center;
+    margin-top: 13vw;
+}
+
+.contenedor,.encabezado{
+    display: block;
+}
+.encabezado{
+    background-image: linear-gradient(to bottom,#39fee0,#51d7f9);
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    color: white;
+}
+.imguser{
+    text-align: center;
+}
+.imgusersss img {
+    width: 40%;
+    height: 40%;
+    margin-top: -20%;
+}
+.encatxt{
+    text-align: center; color: black;
+}
+.encatxt div{
+    font-size: 2vw;
+}
+.cuer{
+    display: block;
+    background: white;
+    padding: 1.5vw 0.5vw;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border: #4A8AF9 solid 2px
+}
+.user,.pass{
+    display: flex;
+    justify-content: center;
+    padding: 0.5vw 0.5vw;
+}
+.userimg img,.passimg img{
+    width: 2vw;
+    height: 2vw;
+}
+.usertxt, .passtxt{
+    padding: 0vw 0.5vw;
+}
+
+.usertxt input, .passtxt input{
+    width: 100%;
+    height: 1.6vw;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
+    border-bottom : #4A8AF9 solid 2px;
+}
+
+.recordar {
+    padding: 0.5vw 0.5vw; 
+    text-align: end;
+
+}
+.recordar a{
+    color: #4A8AF9;
+    font-size: 1.5vw;
+
+}
+.btnlogin {
+    text-align: center;
+}
+.btnlogin input{
+    color: white;
+    background: #4A8AF9;
+    width: 50%;
+    height: 3vw;
+    border-radius: 20px;
+    font-size: 1.3vw;
+    border: #4A8AF9 1px solid;
+}
+.btnlogin input:hover{background-image: linear-gradient(to bottom,#39fee0,#51d7f9);}
+
+.registrar{
+    padding: 1vw 0.5vw; 
+    display: flex;
+    justify-content: space-between;
+}
+.sms label{
+    padding: 0.5vw 0vw; 
+    font-size: 1.5vw;
+
+}
+.regist a{
+    padding: 0.5vw 0vw; 
+    color:#4A8AF9;
+
+    font-size: 1.5vw;
+}
+
+.modal{
+    display: none;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background: rgba(0,0,0,0.5);
+    width: 100%;
+    justify-content: center;
+    height: 100%;
+}
+.containermodal{
+    display: block;
+    background: #E6E6E6;
+    width: 40%;
+    text-align: center;
+    border-radius: 30px;
+    border: #4A8AF9 solid 2px;
+    margin-top: 3.1vw;
+    height: 41vw;
+}
+
+.modalheader{
+    text-align: end;
+    display: flex;
+    padding: 0.5vw 0.5vw;
+    background: #4A8AF9;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    color: white;
+}
+.modalheadertxt{
+    width: 95%;
+}
+.modalheadertxt div {
+    text-align: center;
+    font-size: 2vw;
+}
+.modalheaderx{
+}
+.modalheaderx a{
+    text-decoration: none;
+    text-align: center;
+    font-size: 2vw;
+    color: white;
+}
+.modalmain {
+    text-align: left;
+    padding: 1vw 0vw;
+    height: 32vw;        
+    overflow-x: auto;
+}
+.modalmain::-webkit-scrollbar {
+    background-color: white;
+    border-radius: 20px;
+    border: 2px solid #444444;
+    width: 10px;
+}
+.photope {
+    text-align: center;
+    display: block;
+}
+.btnphoto input{
+    height:  2vw;
+    width: 9vw;  
+    font-size: 1.1vw;
+    text-align: center;
+    background: #4A8AF9;
+    color: white;
+    border-radius: 10px;
+    font-size: 1.3vw;
+    border: #4A8AF9 1px solid;
+}
+
+.photoimg img{
+    height:  12vw;
+    width: 14vw;
+    border: black 2px solid;
+    border-radius: 10px;
+}
+.containertxt{
+    width: 100%;
+}
+.row{
+    padding: 0.5vw 0vw;  
+    display: flex;
+    justify-content: center;
+}
+.rowlabel{
+    width: 22%;
+    height: auto;
+}
+.rowlabel div{
+    font-size: 1.1vw; 
+    height: 2vw;
+}
+.rowtxt{
+    height: auto;
+}
+
+.rowtxt,.rownacitxt,.check, .rowcombo,.rowtxtarea,.rownumber{
+    width: 50%;
+
+}
+.rowtxt input{
+    width: 100%;
+    height:1.5vw;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
+    border-bottom : #4A8AF9 solid 2px;
+    background: #E6E6E6;
+    font-size: 1.1vw;
+
+}
+.rownacitxt input{
+    width: 100%;
+    height:1.5vw;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
+    border-bottom : #4A8AF9 solid 2px;
+    background: #E6E6E6;
+    font-size: 1.1vw;
+}
+.rownacitxt{
+
+}
+.check{
+    display: flex;
+}
+.si div input,.no div input{
+    width: 1.2vw;
+    height: 1.2vw;
+    margin: 0;
+}
+.si div,.no div{
+    padding: 0vw 0.2vw;
+}
+.si,.no{
+    display: flex;
+    padding: 0vw 1vw;
+    font-size: 1.1vw; 
+}
+.rowcombo select,.rownumber input{
+    width: 10vw;
+    height: 2vw;
+    font-size: 1.1vw;
+    border: #4A8AF9 2px solid;
+}
+.rownumber input{
+
+}
+.rowlabel .des{
+    margin-top: 2.2vw;
+}
+.rowtxtarea textarea{
+    width: 100%;
+    height: 5vw;
+    font-size: 1.1vw;
+    border: #4A8AF9 2px solid;
+
+}
+.modalpie{
+}
+.btns {
+    padding: 0.5vw 0vw 1vw 0vw;
+}
+.btns div input{
+    color: white;
+    background: #4A8AF9;
+    width: 40%;
+    height: 3vw;
+    border-radius: 20px;
+    font-size: 1.3vw;
+    border: #4A8AF9 1px solid;
+}
+
+#redes{
+    width: auto;
+    height: auto;
+    overflow: hidden;
+}
+#face{
+    width: 12vw;
+    height: 3vw;
+    float: right;
+}
+#goo{
+    font-size: 12vw;
+    width: 3vw;
+    height: 6vw;
+    float: left;
+}
+@media only screen and (max-width: 1014px)
+{
+    .contenedor{
+        margin-top: 3vw;
+    }
+    .contenedor {
+        width: 40%;
+    }
+}

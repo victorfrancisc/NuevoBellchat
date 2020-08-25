@@ -1,0 +1,634 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.dropdown {
+
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 2% 2%;
+}
+.dropdown:hover .dropdown-content {
+    cursor:  pointer; 
+    position:  fixed;
+    display: block;
+}
+
+.dropdownt {
+
+    position: relative;
+    display: inline-block;
+}
+.dropdownt-contentt {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 2% 2%;
+}
+.dropdownt:hover .dropdownt-contentt {
+
+    margin-top: -6%;
+    position:  fixed;
+    display: block;
+}
+
+.cursorp
+{
+    cursor: pointer;
+}
+
+
+
+.coneiiiUser
+{
+    margin-left: 5%; width:3%; height: auto; float: left;  
+}
+
+.positi
+{
+    cursor: pointer;
+    border-bottom: #d0d3d3 solid; color: black;
+}
+.positi:hover
+{
+    background-image: linear-gradient(to bottom,#39fee0,#51d7f9); 
+}
+.all{
+    display: flex;
+}
+.header{
+    display: inline-block;
+    width: 100%;
+    background: #222BDF;
+    position: fixed;
+    height:73px;
+
+}
+.containerheader{
+    display:flex;
+    height:73px;
+}
+.logo{
+}
+.logo img{
+    height: 80px;
+    width: 80px;
+}
+.movemenu{
+    width: 80%;
+}
+.navegation ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    justify-content: space-around;
+
+}
+.navegation ul li{
+
+}
+.navegation ul li div:hover{
+    background: white;
+    color: black;
+}
+.navegation ul li a:hover{
+    background: white;
+    color: black;
+}
+.navegation ul li div{
+    display: flex;
+
+}
+
+.navegation ul li div img {
+    height: 40px;
+    width: 40px;
+    padding: 1rem 0rem;
+}
+
+.navegation ul li div a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 1.5rem 0.3rem;
+    transition: all 0.4s liner;
+    color: white;
+}
+.myinfo{
+    display: flex;
+    padding: 1rem 1rem;
+}
+
+.myinfophot img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.myinfoname{
+    color: white;
+    font-size: 1.8vw;
+    padding: 1rem 0.5rem;
+}
+
+
+
+.main{
+    width: 100%;
+    display: flex;
+    padding: 6vw 0vw;
+    height: 100%;
+    max-height: 500px;
+    background: #E6E6E6;
+}
+.bandejas{
+    width: 22%;
+    display: block;
+    height: 585px;
+    background: white;
+    border-right: white 2px solid;
+}
+.cht{
+    height: auto;
+    width: 100%;
+    text-align: center;
+    border-bottom: white 1px solid;
+}
+.cht div{
+    padding: 1vw 0rem 0rem 0rem;
+    font-size: 2.5vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.alluserbandejas {
+    overflow-y: auto;
+    height: 100%;
+    max-height: 493px;
+    display: block;
+}
+.alluserbandejas::-webkit-scrollbar {
+    background-color:  white;
+    border-radius: 20px;
+    border: 2px solid white;
+    width: 10px;
+    height: 10px;
+}
+.bandejasbuscar{
+    text-align: center;
+    padding: 0.5vw 0.5vw;
+}
+.bandejasbuscar input{
+    border-radius: 20px;
+    width: 90%;
+    height: 1.3vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.bandejasbuscar input:focus{
+    outline: none;
+}
+.bandejasuser {
+    display: flex;
+    padding: 0.3vw 0.5vw;
+    border-radius: 1vw;
+    width: 90%;
+    float: right;
+    height: 4.5vw;
+}
+.bandejasuserimg{
+    display: flex;
+    align-items: center;
+}
+.bandejasuserimg img {
+    width: 3.5vw;
+    height: 3.5vw;
+    border-radius: 50%;
+    padding: 0.5vw 0vw;
+}
+
+.bandejasuserdata{
+    display: block;
+    width: 100%;
+    overflow: hidden;
+
+}
+.bandejasuserdataname .cl{
+    padding: 0vw 0.5vw;
+    font-size: 1.4vw;
+    color: black;
+    width: 80%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.bandejasuserdataname{
+    display: flex;
+    height: 50%;
+}
+.nsms{
+    background: #F63939;
+    border-radius: 50%;
+    text-align: center;
+    width: 1.7vw;
+    height: 1.7vw;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+.nsms div{
+    padding: 0.3vw 0vw;
+    font-size: 1vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.bandejasuserdatasms{
+    width: 100%;
+    display: flex;
+    word-break: keep-all;
+    align-items: flex-end;
+    height: 50%;
+}
+.smsmd{
+    margin: 0.3vw 0.5vw;
+    font-size:1.3vw; 
+    white-space:nowrap; 
+    overflow:hidden; 
+    text-overflow: ellipsis;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.hrsms{
+    margin: 0.5vw 0vwm;
+    font-size:1vw; 
+    font-family: Arial, Helvetica, sans-serif;
+}
+.chtsms{
+    display: block;
+    width: 75%;
+    height: 100%;
+    max-height: 584px;
+}
+.chtsmsusersheader{
+    background: #E6E6E6;
+    height: 54px;
+    width: 100%;
+    display: flex;
+    height: auto;
+    padding: 0.8vw 0vw 0vw 0vw;
+    font-size: 2.5vw;
+}
+.chtsmsusersheaderdata{
+    width: 80%;
+    display: flex;
+    padding: 0vw 0.5vw;
+}
+.chtsmsusersheaderdataname{
+    width: auto;
+    font-size: 2.5vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.chtsmsusersheaderdataactivo {
+    width:auto;
+    display: flex;
+}
+.chtsmsnowacti{
+    width: 1vw;
+    height: 1vw;   
+    border-radius: 50%;
+    background: #00F704;
+    margin-top: 5%;
+}
+
+.onli{
+    padding: 0vw 0rem 0rem 0.5vw;
+    font-size: 1.4vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.chtsmsusersheaderimg{
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+    padding: 0rem 0.5vw;
+}
+
+.chtsmsusersheaderimg img{
+    width: 3vw;
+    height: 3vw;
+}
+
+.chtsmsusersheader {
+    border-bottom: 2px  white solid;
+}
+.chtsmsusercenter::-webkit-scrollbar {
+    background-color:  #444444;
+    border-radius: 20px;
+    border: 2px solid white;
+    width: 10px;
+    height: 10px;
+}
+
+
+.chtsmsusercenter{
+    background: #E6E6E6;
+    height: 477px;
+    overflow-y: auto;
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border-bottom: white 2px solid;
+}
+.chtsmsusercentersmsrecibe{
+    padding: 0.2vw 0.8vw;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.chtsmsusercentersmsrecibe .allsms{ 
+    max-width: 80%;
+    display: flex;
+    border-radius: 20px;
+    background: white;
+    height: auto;
+    padding: 0rem 0.1vw 0rem 0rem ;
+    display: flex;
+    align-items: center;
+}
+
+.chtsmsusercentersmsrecibe .texto {
+    height: auto;
+    word-wrap: break-word; 
+    max-width:87.5%;
+    width: auto;
+    padding: 0vw 0.4vw;
+    font-size: 1vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.chtsmsusercentersmsenvia{
+    padding: 0.2vw 0.8vw;
+    display: flex;
+    justify-content: flex-end;
+}
+.chtsmsusercentersmsenvia .allsms{
+    width: auto;
+    max-width: 80%;
+    display: flex;
+    border-radius: 20px;
+    justify-content: flex-end;
+    padding: 0rem 0.1vw 0rem 0rem;
+    color: white;
+    background: #4A8AF9;
+    display: flex;
+    align-items: center;
+
+}
+.chtsmsusercentersmsenvia .texto {
+    height: auto;
+    word-wrap: break-word; 
+    max-width:87.5%;
+    width: auto;
+    padding: 0vw 0.4vw;
+    font-size: 1vw;
+    text-align: end;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.hora{
+    height: 100%;
+    width: 2.4vw;
+    margin-top: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.imgmenu{
+    margin-top: 0.3vw;
+    display: flex;
+}
+.imgmenu img{
+    width: 1.4vw;
+    height: 0.3vw;
+}
+.txthora {
+    display: flex;
+    align-items: flex-end;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.txthora h4 {
+    font-size: 0.7vw;
+    height: 0vw;
+}
+
+
+.chtsmsuserpie{
+    display: flex;
+    background: #E6E6E6;
+    width: 100%;
+    height: 50px;
+}
+.chtsmsuserpietxt {
+    width: 80%;
+    padding: 0.5vw 0.6vw;
+    height: 100%;
+}
+.chtsmsuserpietxt input{
+    width: 100%;
+    height: 2.4vw;
+    border-radius: 20px;
+
+}
+.chtsmsuserpietxt input:focus{
+    outline: none;
+}
+.chtsmsuserpieactionn{
+    width: 10%;
+    display: flex;
+    padding: 0.6vw 0rem;
+    justify-content: space-around;
+}
+.chtsmsuserpieactionn img{
+    width: 2.5vw;
+    height: 2.5vw;
+}
+
+.chtsmsuserpieaction{
+    width: 20%;
+    display: flex;
+    padding: 0.6vw 0rem;
+    justify-content: space-around;
+}
+.chtsmsuserpieaction img{
+    width: 2.5vw;
+    height: 2.5vw;
+}
+
+.infouserchat {
+    display: block;
+    overflow-y: auto;
+    background: white;
+    width: 25%;
+    height: 585px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.infouserchat::-webkit-scrollbar {
+    background-color: #444444;
+    border-radius: 20px;
+    border: 2px solid white;
+    width: 10px;
+    height: 10px;
+}
+
+.infouserchatphotname{
+    display: block;
+    padding: 1vw 1vw;
+    text-align: center;
+    justify-content: center;
+}
+.infouserchatphoto{
+    width: 100%;
+}
+.infouserchatphoto img{
+    width: 10vw;
+    height: 10vw;
+    border-radius: 50%;
+}
+
+.infouserchatnames div{
+    font-size: 2vw;
+    padding: 0.2vw 0rem;
+    height: auto;
+    word-wrap: break-word;
+    width: 100%;
+}
+.infouserchatotherinfo{
+    display: block;
+}
+.infouserchatdirecci, .infouserchatcorreo, .infouserchattelefo, .infouserchatfnaci{
+    display: flex;
+    padding: 1vw 1vw;
+}
+.infouserchatdirecci img,
+.infouserchatcorreo img, .infouserchattelefo img, .infouserchatfnaci img {
+    width: 1.5vw;
+    height: 1.5vw;
+}
+.infouserchatdirecci div,
+.infouserchatcorreo div, .infouserchattelefo div, .infouserchatfnaci div {
+    font-size: 1.3vw;
+    padding: 0em 0.5vw;
+}
+.infouserchatotheracti{
+    text-align: center;
+}
+.infouserchatotheracti img{
+    width: 10vw;
+    height: 10vw;
+    border-radius: 15px;
+}
+@media all and (max-width: 1014px) {
+    
+    .dropdownt:hover .dropdownt-contentt {
+
+    margin-top: -9%;
+    position:  fixed;
+    display: block;
+}
+    .coneiiiUser
+    {
+        width: 100%; height: auto;  display:  inline-block; margin-top : 60%;
+    }
+    .coneiiiUser:hover
+    {
+        box-shadow:0px 0px 5px 1px; border: #00BFFF solid 1px;
+
+    }
+    .infouserchat {
+        width: 0%;
+    }
+    .main{
+        padding: 0rem;
+    }
+    .all{ display: flex;}
+    .allinfo{
+        display: none;
+    }
+    .bandejas{
+        width: 25%;
+    }
+    .chtsms{
+        width: 75%;
+    }
+    /*    .bandejasuser {
+            height: 12%;
+        }*/
+    .bandejasuser img{
+        width: 4vw;
+        height: 4vw;
+        padding: 0.5vw 0rem;
+    }
+    /*    .bandejasuserdataname label{
+            font-size: 2.4vw;
+        }*/
+    /*    .nsms{
+            width: 2.5vw;
+            height: 2.5vw;
+        }
+        .nsms div{
+            font-size: 1.6vw;
+            padding: 20% 0vw;
+        }
+        .smsmd{
+            font-size: 1.7vw;
+        }
+        .hrsms{
+            font-size: 1.3vw;
+        }
+      
+        h3{
+            font-size: 1.5vw;
+        }*/
+}
+.bandejasuserimgbuscar img{
+    width: 3vw;
+    height: 3vw;
+    border-radius: 50%;
+    padding: 0vw 0vw;
+}
+.bandejasuserbuscar{
+    display: flex;
+    padding: 0.3vw 0.5vw;
+    width: 90%;
+    float: right;
+    height: 3.3vw;
+    border-bottom: #4A8AF9 2px solid;
+}
+.bandejasuserdatabuscar div{ 
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 0.8vw;
+    font-size: 1.4vw;
+    padding: 0;
+}
+.show {
+    position: absolute;
+    background-color:white;
+    margin: 0;
+    list-style-type: none;
+    list-style: none;
+    border-radius: 1vw;
+
+}
+.hide {
+    display: none;
+}
+.show ul{ margin: 0; padding: 0vw 0vw; }
+.show li{ list-style: none; padding: 0vw 1vw;}
+.show a { text-decoration: none; color: black; }
+.show li:hover { color: white; background: #4A8AF9; }
+.show a:hover { color: white; background: #4A8AF9; }

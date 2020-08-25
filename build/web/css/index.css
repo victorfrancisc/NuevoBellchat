@@ -1,0 +1,112 @@
+body
+{
+     /*background-image: url(../imagen/indextwo/8.png); background-repeat: no-repeat;*/
+    margin: 0px; padding: 0px;
+}
+
+.imag
+{
+    background-image: url(../imagen/indextwo/titulo3.png);
+}
+.conteT
+{
+    width:80%;height: auto;margin-left: 1%; float:left; 
+}
+
+.sep
+{
+    width: auto; height: 25px;
+}
+.barraIz
+{
+   width:10%; background: yellow;overflow: hidden;justify-content:space-between;
+}
+
+
+ 
+.contemen
+{
+    width: 100%; height: 100%; 
+}
+.conteMee
+{
+    width: 60%; height: auto;margin-left: 20%;  background: white; border: #4A8AF9 5px solid; -webkit-border-radius: 10px; overflow: hidden;
+}
+.contenom
+{
+    width: 40%; height: auto;background:#E6E6E6 ;text-align: center; float: left;
+}
+.conle
+{
+    height: 1%; background: #4A8AF9; margin-top: -28%;
+}
+.coment
+{
+    font-size: 3vw; margin-top: -30%; font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Helvetica,ヒラギノ角ゴ Pro W3,Hiragino Kaku Gothic Pro,メイリオ,Meiryo,ＭＳ Ｐゴシック,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+}
+.conteimg
+{
+    width: 60%; height: auto; text-align: center;float: right;
+}
+.contecircule
+{
+    width: 70%; height: auto; margin-left: 15%; margin-top: 8%; padding: 0.5%;
+}
+.contecirculeune
+{
+    width: auto; height:auto; border-top: #d0d3d3 solid; border-bottom: #d0d3d3 solid; padding: 2%;   overflow: hidden;
+}
+.contstylecirune
+{
+    width: auto; height: 40%;background: white; padding: 2%; border: blue solid 5px ; border-radius:100%; box-shadow:0px 0px 5px 1px; float: left; margin-right: 5%;
+}
+.contanune
+{
+    width: auto; height: auto;
+}
+.contcomentaune
+{
+   font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Helvetica,ヒラギノ角ゴ Pro W3,Hiragino Kaku Gothic Pro,メイリオ,Meiryo,ＭＳ Ｐゴシック,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol; 
+
+}
+.contecirtwo
+{
+    width: auto; height:auto;border-bottom: #d0d3d3 solid; padding: 2%;   overflow: hidden;
+}
+.contecittwo
+{
+    width: auto; height: 40%;background: white;padding: 2%; border: red solid 5px ; border-radius:100%; box-shadow:0px 0px 5px 1px; float: right; margin-right: 5%;
+}
+.contecirculetrw
+{
+    width: auto; height:auto;border-bottom: #d0d3d3 solid; padding: 2%; overflow: hidden;
+}
+
+.conteciulltrw
+{
+    width: auto; height: 40%;background: white;padding: 2%; border: #fd6400 solid 5px ; border-radius:100%; box-shadow:0px 0px 5px 1px; float: left; margin-right: 5%;
+}
+.contetrwcomen
+{
+    width: auto; height: auto;
+}
+.conteneinferior
+{
+    width: 100%; height: 500px; background: #353935;
+}
+.nameEti
+{
+    background: #2ee509; width: auto; padding: 1%; font-size: 1.5vw;  float: left;
+}
+
+.contedow
+{
+    width: 100%; height: 100%; padding-top: 10rem;
+}
+
+@media only screen and (max-width: 1014px)
+{
+    .contedow {
+        margin-top: -77%;
+    }
+}

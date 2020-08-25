@@ -1,0 +1,280 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>LOGIN</title>
+        <link rel="icon" href="../images/header/logo.png" type="image/png" />
+         <script src='http://code.jquery.com/jquery-2.1.3.js'></script>
+        <script src="../script/jquery-2.1.1.min.js" type="text/javascript"></script>
+        <script src="http://code.jquery.com/jquery-latest.js"></script>
+        <script src="../js/login.js" type="text/javascript"></script>
+        <link href="../css/menu.css" rel="stylesheet" type="text/css"/>
+        <script src="../js/redessoaiales.js" type="text/javascript"></script>
+         <script src="https://connect.facebook.net/en_US/sdk.js"></script>
+        <meta name="google-signin-scope" content="profile email"></meta>
+        <meta name="google-signin-client_id" content="544817215974-h9h18dhu8btpp24al4gc065e882e6eft.apps.googleusercontent.com"></meta>
+        <script src="https://apis.google.com/js/platform.js" async="defer"></script>
+        <link href="../css/login.css" rel="stylesheet" type="text/css"/>
+    </h:head>
+    <h:body>
+        <div class="all">
+            <div class="barraS">
+                <div class="conteImage">
+                    <img  width="100%" src="../images/header/logo.png" alt=""/>
+                </div>
+                <div class="contemenuima">
+                    <div class="contTune">
+                        <div class="contetheenlace">
+                            <div class="coneiii"> 
+                                <a href="../index.xhtml">
+                                    <img width="100%" src="../images/header/casita.png" alt=""/>
+                                </a> 
+                            </div>
+                            <div class="linkotrio">
+                                <a href="../index.xhtml" class="estcotwo"><b>Inicio</b></a> 
+                            </div>    
+                            <div class="coneiii"> 
+                                <a href="login.xhtml">
+                                    <img width="100%" src="../images/header/login.png" alt=""/>
+                                </a>
+                            </div>
+                            <div class="linkotrio">
+                                <a href="login.xhtml" class="estcotwo"><b>Login</b></a> 
+                            </div>
+                            <div class="coneiii"> 
+                                <a href="#"><img width="100%" src="../images/header/cof.png" alt=""/></a> 
+                            </div>
+
+                            <div class="linkotrio">
+                                <a href="#" class="estcotwo"><b>Configurar</b></a> 
+                            </div>
+                            <div class="coneiii"> 
+                                <a href="messages.xhtml"><img width="100%" src="../images/header/sms.png" alt=""/></a> 
+                            </div>
+                            <div class="linkotrio">
+                                <a href="messages.xhtml" class="estcotwo"><b>Mensajes</b></a> 
+                            </div>
+                            <div class="coneiii"> 
+                                <a><img width="100%" src="../images/header/micro.png" alt=""/></a> 
+                            </div>
+                            <div class="linkotrio">
+                                <a class="estcotwo" id="bntStar"><b>Comando</b></a> 
+                            </div>
+                            <div class="coneiii"> 
+                                <a><img width="90%" src="../images/header/sili.png" alt=""/></a> 
+                            </div>
+                            <div class="linkotrio">
+                                <a class="estcotwo" id="bntmute"><b>Mute</b></a> 
+                            </div>
+                            <div class="coneiii"> 
+                                <a href="#"><img width="90%" src="../images/header/manual.png" alt=""/></a> 
+                            </div>
+                            <div class="linkotrio">
+                                <a href="#" class="estcotwo" id="bntmuteLogin" title="Cerrando control de voz"><b>Manual</b></a> 
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div> 
+            </div>
+              <div class="mainn">
+                <div class="contenedor">
+                    <div class="encabezado">
+                        <div class="imguser">
+                            <div class="imgusersss">
+                                <img src="../images/login/use.png" alt=""/>
+                            </div>
+                        </div>
+                        <div class="encatxt"><div>WELCOME</div> </div>
+                    </div>
+                    <div class="cuer" >
+                        <div class="user" >
+                            <div class="userimg">
+                                <img src="../images/login/userimg.png" alt=""/>
+                            </div>
+                            <div class="usertxt"><input type="text"  placeholder="Username" id="textuser"/> </div> 
+                        </div>
+                        <div class="pass" id="">
+                            <div class="passimg">
+                                <img src="../images/login/candado.png" alt=""/>
+                            </div>
+                            <div class="passtxt"><input type="password"  placeholder="Password" id="textpassword"/> </div> 
+                        </div>
+                        <div class="recordar" > 
+                            <a href="#" >forgot Password?</a>
+                        </div>
+                        <div class="btnlogin"> 
+                            <input type="button" value="LOGIN" onclick="login()" />
+                        </div>
+                    </div>
+                    <div class="registrar">
+                        <div class="sms"> <label>You do not have an account?</label></div>
+                        <div class="regist"><a href="javascript:modal('a');" id="regis">Register Here</a></div> 
+                    </div>
+                     <div id="redes">
+                        <h:graphicImage   value="../images/login/face.jpg" onclick="iniciarsesion()" id="face" > </h:graphicImage>
+                        <div id="goo" class="g-signin2" data-onsuccess="onSignIn" onclick="onSignIn();"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<h:form enctype="multipart/form-data" id="ju" > 
+
+            <div id="mod" class="modal" >
+                <div class="containermodal">
+                    <div class="modalheader">
+                        <div class="modalheadertxt"> <div>Registro de usuario</div></div>
+                        <div class="modalheaderx"> <a href="javascript:modal('b');">X</a></div>
+                    </div>
+
+                    <div class="modalmain">
+                        <div class="photope">
+                            <div class="photoimg">
+                                <img id="imghh" src="../imagen/login/usre.png"  alt=""/>
+                            </div>
+                            <div class="btnphoto">
+                                <h:inputFile value="#{addimguser.fileUpload}" onchange="onFileSelected()" id="fileimp" style="display: none;" > </h:inputFile>
+                                <input type="button" value="seleccionar" onclick="openfie()"/>
+                            </div>
+                            </div>
+                        <div class="containertxt">
+                            <div class="row">
+                                <div class="rowlabel">
+                                    <div>NOMBRE:</div>
+                                </div>
+                                <div class="rowtxt">
+                                    <input type="text" id="name" value="" name="" placeholder="Ingrese sus nombres"/>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="rowlabel">
+                                    <div>APELLIDO:</div>
+                                </div>
+                                <div class="rowtxt">
+                                    <input type="text" id="apell" value="" name="" placeholder="Ingrese sus apellidos"/>
+                                </div>
+                            </div>
+                             <div class="row">
+                                <div class="rowlabel">
+                                    <div>USER:</div>
+                                </div>
+                                <div class="rowtxt">
+                                    <input type="text" id="user" value="" name="" placeholder="Ingrese sus usuario"/>
+                                </div>
+                            </div>
+                             <div class="row">
+                                <div class="rowlabel">
+                                    <div>PASSWORD:</div>
+                                </div>
+                                <div class="rowtxt">
+                                    <input type="password" id="pass" value="" name="" placeholder="Ingrese su clave"/>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="rowlabel">
+                                    <div>DIRECCIÓN:</div>
+                                </div>
+                                <div class="rowtxt">
+                                    <input type="text" id="dire" value="" name="" placeholder="Ingrese su dirección"/>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="rowlabel">
+                                    <div>TELÉFONO:</div>
+                                </div>
+                                <div class="rowtxt">
+                                    <input type="text" id="pho" value="" name="" placeholder="Ingrese su # telefónico"/>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="rowlabel">
+                                    <div>E-MAIL:</div>
+                                </div>
+                                <div class="rowtxt">
+                                    <input type="text" id="eml" value="" name="" placeholder="Ingrese su correo electrónico"/>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="rowlabel">
+                                    <div>FECHA N:</div>
+                                </div>
+                                <div class="rownacitxt">
+                                    <input type="date" id="fnc" value="" name=""
+       min="01/01/1970" max="12/12/2030"/>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="rowlabel">
+                                    <div>DISCAPACIDAD:</div>
+                                </div>
+                                <div class="check">
+                                    <div class="si"> 
+                                        <div>
+                                            SI
+                                        </div>
+                                        <div>
+                                            <input id="rdsi" value="si" type="radio" onclick="validateradio(this)"/>
+                                        </div>
+                                    </div>
+                                    <div class="no"> 
+                                        <div>
+                                            NO
+                                        </div>
+                                        <div>
+                                            <input id="rdno" value="no" type="radio" checked="true" onclick="validateradio(this)"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="rowlabel">
+                                    <div>TIPO:</div>
+                                </div>
+                                <div class="rowcombo">
+                                    <select id="tp" disabled="true" >
+                                        <option value="0">seleccione..</option>
+                                        <option value="1">visual</option>
+                                        <option value="2">motora</option>
+                                        <option value="3">auditiva</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="rowlabel">
+                                    <div>GRADO (%):</div>
+                                </div>
+                                <div class="rownumber">
+                                    <input type="number" min="0" max="100" step="1" id="grd" disabled="true" placeholder="número"/>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="rowlabel">
+                                    <div class="des">DESCRIPCIÓN:</div>
+                                </div>
+                                <div class="rowtxtarea">
+
+                                    <textarea id="desc" disabled="true" > 
+                                    </textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modalpie">
+                        <div class="btns">
+                            <div>
+                                <input id="btnre" type="button" value="REGISTRAR" onclick="savepeople()"/>
+                                <h:inputText value="#{addimguser.idp}" id="idp" style="display: none;" > </h:inputText>
+                                <h:commandButton action="#{addimguser.upload()}" id="btncom" value="subir" style="display: none;" ></h:commandButton>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </h:form>
+        <script src="../js/voicecommand/Voicelogin.js" type="text/javascript"></script>
+        <script src="../js/login.js" type="text/javascript"></script>
+    </h:body>
+</html>
+

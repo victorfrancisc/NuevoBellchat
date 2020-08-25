@@ -1,0 +1,208 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>MESSAGES</title>
+        <link rel="icon" href="../images/header/logo.png" type="image/png" />
+        <script src="../js/websocket.js" type="text/javascript"></script>
+        <script src="http://code.jquery.com/jquery-latest.js"></script>
+        <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js'></script>
+        <link href="../css/menu.css" rel="stylesheet" type="text/css"/>
+        <link href="../css/messages.css" rel="stylesheet" type="text/css"/>
+        <script src="../js/messages.js" type="text/javascript"></script>
+    </h:head>
+    <h:body onload="unir()">
+        <div class="all" id="alll" style=" width: auto; height: auto;">
+            <div class="barraS">
+                
+                <div class="userdato">  
+                    <div class="coneiiiUser"> 
+                        <a><img id="fotousaurio" width="90%" src="../images/login/userimg.png" alt=""/></a> 
+                    </div>
+                    <div class=" linkotrio dropdown">
+                        <a class="estcotwo " onclick="" id="bntmuteLogin" title="nombre usuario"><b>Usuario</b></a> 
+                        <div class="dropdown-content">
+                            <p class="positi">Cerrar</p>
+                            <p class="positi">Ni idea</p>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="contemenuima">
+                    <div class="contTune">
+                        <div class="contetheenlace">
+
+                            <div class="coneiii"> 
+                                <a href="../index.xhtml">
+                                    <img width="100%" src="../images/header/casita.png" alt=""/>
+                                </a> 
+                            </div>
+                            <div class="linkotrio">
+                                <a href="../index.xhtml" class="estcotwo"><b>Inicio</b></a> 
+                            </div>    
+                            <div class="coneiii"> 
+                                <a href="login.xhtml">
+                                    <img width="100%" src="../images/header/login.png" alt=""/>
+                                </a>
+                            </div>
+                            <div class="linkotrio">
+                                <a href="login.xhtml" class="estcotwo"><b>Login</b></a> 
+                            </div>
+                            <div class="coneiii"> 
+                                <a href="#"><img width="100%" src="../images/header/cof.png" alt=""/></a> 
+                            </div>
+
+                            <div class="linkotrio">
+                                <a href="#" class="estcotwo"><b>Configurar</b></a> 
+                            </div>
+                            <div class="coneiii"> 
+                                <a href="messages.xhtml"><img width="100%" src="../images/header/sms.png" alt=""/></a> 
+                            </div>
+                            <div class="linkotrio">
+                                <a href="messages.xhtml" class="estcotwo"><b>Mensajes</b></a> 
+                            </div>
+                            <div class="coneiii"> 
+                                <a id="bntStarune" onclick="control('bntStarune')"><img width="100%" src="../images/header/micro.png" alt=""/></a> 
+                            </div>
+                            <div class="linkotrio" id="bntStar" onclick="control('bntStar')">
+                                <a class="estcotwo" ><b>Comando</b></a> 
+                            </div>
+                            <div class="coneiii" id="bntmutetwo" onclick="closeauto('bntmutetwo')"> 
+                                <a ><img width="90%" src="../images/header/sili.png" alt=""/></a> 
+                            </div>
+                            <div class="linkotrio">
+                                <a class="estcotwo" id="bntmute" onclick="closeauto('bntmute')"><b>Mute</b></a> 
+                            </div>
+                            <div class="coneiii"> 
+                                <a href="#"><img width="90%" src="../images/header/manual.png" alt=""/></a> 
+                            </div>
+                            <div class="linkotrio">
+                                <a href="#" class="estcotwo" id="bntmuteLogin" title="Cerrando control de voz"><b>Manual</b></a> 
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div> 
+
+
+                <div class="conteImage">
+                    <img  width="100%" src="../images/header/logo.png" alt=""/>
+                </div>
+
+
+
+
+            </div>
+            <div class="main">
+                <div class="bandejas">
+                    <div class="cht"> <div> Chats </div></div>
+                    <div class="bandejasbuscar">
+                        <input  id="txtbusqueda" type="text" value="" placeholder="Buscar"  ondblclick=""  onkeyup="teclanew(event)" />
+                    </div>
+                    <div id="allsmsbandeja" class="alluserbandejas" >
+
+                    </div>
+                    <div id="resultbuscar" class="alluserbandejas" style="display: none;">
+
+                    </div>
+                </div>
+                <div  id="allcha" class="chtsms" style="display: none;"  >
+                    <div id="containerchatfriend" class="chtsmsusers">
+                        <div class="chtsmsusersheader">
+                            <div class="chtsmsusersheaderdata"> 
+                                <div id="namefriend" class="chtsmsusersheaderdataname"></div>
+                                <div class="chtsmsusersheaderdataactivo">
+                                    <div class="chtsmsnowacti"> </div>
+                                    <label class="onli"> activo</label>
+                                </div>
+                            </div>
+                            <div class="chtsmsusersheaderimg">
+                                <img src="../images/chat/buscar.png" alt=""/>
+                                <img src="../images/chat/flecha-hacia-abajo.png" alt=""/>
+                            </div>
+                        </div>
+                        <div id="centersms" class="chtsmsusercenter">
+
+                        </div>
+                        <div class="chtsmsuserpie">
+                            <div class="chtsmsuserpietxt" > 
+                                <input id="textsend" type="text" value="" placeholder="escribe tu texto ......" />
+                            </div>         
+                        
+                        <div class="chtsmsuserpieactionn dropdownt"> 
+                            <img width="10%"  src="../images/chat/emo.ico"></img>
+                                    <div id="dropdownt-contentt" class="dropdownt-contentt">
+                                        <label class="cursorp"  onclick="pasaremjin('&#x1F600;')">&#x1F600;</label>
+                                        <label class="cursorp"  onclick="pasaremjin('&#128512;')">&#128512;</label>
+                                        <label class="cursorp"  onclick="pasaremjin('&#128520;')">&#128520;</label>
+                                        <label class="cursorp"  onclick="pasaremjin('&#128525;')">&#128525;</label>
+                                       
+                                    </div>
+                        </div>
+                            <div class="chtsmsuserpieaction  ">                              
+                                    
+                               
+                                <div onclick="enviartext()"> <img src="../images/chat/send.png" alt="" /></div> 
+                                <div>  
+                                    <img src="../images/chat/audio.png" alt=""/>
+                                </div> 
+                                <div></div> 
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div id="infoallfriend" class="infouserchat" style="display: none;">
+                    <div class="allinfo">
+                        <div class="infouserchatphotname">
+                            <div class="infouserchatphoto">
+                                <img  src="../images/chat/educacion-digital.jpg" alt="" /> 
+                            </div>
+                            <div class="infouserchatnames">
+                                <div id="nameallfriend" > </div>
+                            </div>
+                        </div>
+                        <div class="infouserchatotherinfo">
+                            <div class="infouserchatdirecci">
+                                <img src="../images/chat/locationpinmap_99638.png" alt=""/>
+                                <div id="addresfriend">  </div>
+                            </div>
+                            <div class="infouserchatcorreo">
+                                <img src="../images/chat/email.png" alt=""/>
+                                <div id="emailfriend"> </div>
+                            </div>
+                            <div class="infouserchattelefo">
+                                <img src="../images/chat/phone.png" alt=""/>
+                                <div id="phonefriend"></div>
+                            </div>
+                            <div class="infouserchatfnaci">
+                                <img src="../images/chat/calendar.png" alt=""/>
+                                <div id="nacifriend">Enero 24, 1990</div>
+                            </div>
+                        </div>
+                        <div class="infouserchatotheracti" oncontextmenu="" >
+                            <img src="../images/chat/8566.jpg" alt=""/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hide" id="rmenu">
+            <ul>
+                <li>
+                    <a href="javascript:removesms();">Eliminar</a>
+                </li>
+
+                <li>
+                    <a href="http://localhost:8080/login">Copiar</a>
+                </li>
+            </ul>
+        </div>
+        <script src="../js/voicecommand/audiotext.js" type="text/javascript"></script>
+    </h:body>
+</html>
+
